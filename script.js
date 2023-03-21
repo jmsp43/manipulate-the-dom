@@ -54,7 +54,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   // Part 6
+  // Let's add to DOM's Past Races list. Create a new <li>element, change the new <li>text to the name of a city, and append it to the Past Races list.
 
+  const li = document.createElement('li')
+  li.innerText = 'NYC'
+  pastRaces.append(li)
 
   // Part 7
 
