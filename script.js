@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
+  //DOM's personal website title is a bit wordy. Write a JavaScript statement that selects the #main-titleID element. Remember there are a couple of ways to query id. Change the text of the title to something shorter.
+
+  // document.querySelector('#main-title') = "Hi, I'm Dom :)"
+
 
 
   // Part 2
