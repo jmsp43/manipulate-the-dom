@@ -47,18 +47,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Part 4
   // Select all .special-title class elements and change their font-sizeto 2rem. Remember you might have to iterate through the list of elements
 
-  let specialTitles = document.querySelectorAll('.special-title')
-  specialTitles.forEach(title => {
-    title.style.font = '2rem'
-  })
+  // let specialTitles = document.querySelectorAll('.special-title')
+  // specialTitles.style.fontSize = "2rem"
 
 
   // Part 5
   // Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
-  let pastRaces = document.querySelector('#past-races')
-  for (let i = 0; i = pastRaces.length; i++) {
-    if (pastRaces[i] === 'Chicago') {
-      pastRaces.removeChild(li)
+  let pastRaces = document.getElementById("past-races")
+  for (let i = 0; i < pastRaces.childElementCount; i++) {
+    if (pastRaces.children[i].textContent === 'Chicago') {
+      pastRaces.removeChild(pastRaces.children[i])
     }
   }
 
@@ -73,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Part 7
 
   // Create a new .blog-post corresponding to the new city added in Part 6. You will have to create a new <div> with class of .blog-post, a new <h2> with text, and a new <p> with some text. Think about what order you want to create the elements, and what order you want to append them in.
+
 
 
 
