@@ -72,8 +72,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // Create a new .blog-post corresponding to the new city added in Part 6. You will have to create a new <div> with class of .blog-post, a new <h2> with text, and a new <p> with some text. Think about what order you want to create the elements, and what order you want to append them in.
 
-
-
+  let nycDiv = document.createElement('div')
+  nycDiv.className = 'blog-post purple'
+  //document.body.getElementsByClassName('main').appendChild(nycDiv)
+  document.body.appendChild(nycDiv)
+  let nycH2 = document.createElement('h2')
+  nycH2.innerText = 'NYC!!'
+  let nycP = document.createElement('p')
+  nycP.innerText ='I went 45 mph on the BQE'
+  nycDiv.append(nycH2)
+  nycDiv.append(nycP)
 
   // Part 8
 
