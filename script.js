@@ -44,6 +44,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   // Part 5
+  // Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
+  let pastRaces = document.querySelector('#past-races')
+  for (let i = 0; i = pastRaces.length; i++) {
+    if (pastRaces[i] === 'Chicago') {
+      pastRaces.removeChild(li)
+    }
+  }
 
 
   // Part 6
