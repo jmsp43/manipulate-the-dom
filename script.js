@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector('#main-title') = "Hi, I'm Dom :)"
 
   // Part 2
+  //Select the body and change the background-color to a new color of your choice.
 
+  this.body.backgroundColor = '#ff80ed'
 
   // Part 3
 
