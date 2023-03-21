@@ -74,10 +74,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   let nycDiv = document.createElement('div')
   nycDiv.className = 'blog-post purple'
-  //document.body.getElementsByClassName('main').appendChild(nycDiv)
-  document.body.appendChild(nycDiv)
+  document.querySelector('.main').appendChild(nycDiv)
   let nycH2 = document.createElement('h2')
   nycH2.innerText = 'NYC!!'
+  nycH2.style.color = 'white'
   let nycP = document.createElement('p')
   nycP.innerText ='I went 45 mph on the BQE'
   nycDiv.append(nycH2)
