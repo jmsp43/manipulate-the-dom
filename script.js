@@ -5,7 +5,7 @@ let quotes = [
   `You almost had me? You never had me - you never had your car!`,
   `I don't have friends. I have family.`,
   `It don't matter if you win by an inch or a mile. Winning's winning.`
-];
+]
 
 document.addEventListener("DOMContentLoaded", function(event) {
   // Random quote of the day generator
@@ -85,10 +85,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // Part 8
 
+  // Query select the #quote-titleID element and add a click event handler. That event handler should use the function randomQuotewhenever #quote-titleis clicked.
+
+  let quoteTitle = document.querySelector('#quote-title')
+  quoteTitle.addEventListener('click', randomQuote)
+
+
 
   // Part 9
 
+  // Select all .blog-postclass elements. Iterate through the list of .blog-postclass elements and apply two event handlers to each node. The first event handler should be listening for mouseoutevents while the second handler should be listening for mouseenterevents.
+
+  // The mouseouthandler should toggle the class .purple
+  // The mouseenterhandler should toggle the class .red
+  // Test it out!
+  
+  // Hint:
+  
+  // Remember the document node property .classListand the document node method .toggle().
 
 
-
-});
+})
