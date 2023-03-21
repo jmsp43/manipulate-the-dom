@@ -27,9 +27,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   this.body.backgroundColor = '#ff80ed'
 
   // Part 3
-
+  //Select DOM's Favorite Things list and remove the last list item.
+    
+  let list = document.querySelector('#favorite-things')
+  for(let i= list.length - 1; i = list.length; i++) {
+      list.removeChild(li)
+  }
 
   // Part 4
+  // Select all .special-title class elements and change their font-sizeto 2rem. Remember you might have to iterate through the list of elements
+
+  let specialTitles = document.querySelectorAll('.special-title')
+  specialTitles.forEach(title => {
+    title.style.font = '2rem'
+  })
 
 
   // Part 5
