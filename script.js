@@ -95,14 +95,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Part 9
 
   // Select all .blog-postclass elements. Iterate through the list of .blog-postclass elements and apply two event handlers to each node. The first event handler should be listening for mouseoutevents while the second handler should be listening for mouseenterevents.
-
   // The mouseouthandler should toggle the class .purple
   // The mouseenterhandler should toggle the class .red
   // Test it out!
-  
   // Hint:
-  
   // Remember the document node property .classListand the document node method .toggle().
 
+
+  const blogs = document.querySelectorAll('.blog-post')
+  for (let i = 0; i < blogs.length; i++){
+    const blog = blogs[i]
+    blog.addEventListener('mouseleave', function () {
+      blog.classList.toggle('purple')
+    })
+    blog.addEventListener('mouseenter', function () {
+      blog.classList.toggle('red')
+    })
+  }
 
 })
