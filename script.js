@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Part 4
   // Select all .special-title class elements and change their font-sizeto 2rem. Remember you might have to iterate through the list of elements
 
-  // let specialTitles = document.querySelectorAll('.special-title')
-  // specialTitles.style.fontSize = "2rem"
+  let specialTitles = document.querySelectorAll('.special-title')
+  specialTitles.forEach(function (title) {title.style.fontSize = "3rem"})
 
 
   // Part 5
